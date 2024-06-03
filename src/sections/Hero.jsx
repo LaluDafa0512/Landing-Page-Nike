@@ -3,6 +3,7 @@ import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
+import Button from "../components/button";
 
 const Hero = () => {
   const [bigShoeImg, setbigShoeImg] = useState(bigShoe1);
@@ -26,7 +27,7 @@ const Hero = () => {
           Discover stylish Nike arrivals, quality comfort,and innovation for
           yout active life
         </p>
-        <button label="Shop Now " iconURL={arrowRight} />
+        <Button label="Shop Now " iconURL={arrowRight} />
 
         <div className="flex justify-start items-start w-full mt-20 gap-16">
           {statistics.map((stat) => (
