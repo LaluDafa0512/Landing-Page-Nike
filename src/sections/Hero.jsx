@@ -1,4 +1,3 @@
-import Button from "../components/button";
 import { useState } from "react";
 import { arrowRight } from "../assets/icons";
 import { shoes, statistics } from "../constants";
@@ -27,7 +26,7 @@ const Hero = () => {
           Discover stylish Nike arrivals, quality comfort,and innovation for
           yout active life
         </p>
-        <Button label="Shop Now " iconURL={arrowRight} />
+        <button label="Shop Now " iconURL={arrowRight} />
 
         <div className="flex justify-start items-start w-full mt-20 gap-16">
           {statistics.map((stat) => (
